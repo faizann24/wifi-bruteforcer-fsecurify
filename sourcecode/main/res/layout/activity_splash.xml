@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.jamsh.healthme.SplashActivity"
+    android:orientation="vertical"
+    android:background="#8c1313"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/wifi_fsecurify"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/fsecurify_white_logo" />
+</LinearLayout>

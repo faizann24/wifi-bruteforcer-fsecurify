@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SSID Name"
+        android:id="@+id/ssidname"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:background="#8c1313"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/detail"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:autoText="false"
+        android:background="#8c1313"
+        android:paddingTop="3dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textColor="#e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:indeterminate="false"
+            android:max="10000"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/passwords"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passwords Tried"
+            android:id="@+id/textView5"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/passwords"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/status"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onCrackStart"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="#8c1313" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:onClick="stop"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="#8c1313" />
+    </LinearLayout>
+
+</LinearLayout>

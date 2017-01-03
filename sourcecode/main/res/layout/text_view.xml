@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="New Text"
+    tools:ignore="MissingPrefix"
+    android:id="@+id/textView2"
+    android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="#ffffff"
+    android:textSize="20dp"
+    android:paddingTop="15dp"
+    android:paddingLeft="10dp"
+    android:background="#1e1e1e"
+    android:paddingBottom="15dp"
+    android:textAppearance="@style/TextAppearance.FontPath"
+    xmlns:tools="http://schemas.android.com/tools" />

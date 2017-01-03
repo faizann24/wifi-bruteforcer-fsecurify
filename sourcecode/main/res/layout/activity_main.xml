@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hayyaalassalah.faizanahmad.wifihacker.MainActivity"
+    android:orientation="vertical"
+    android:background="#101010"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wifi Bruteforcer"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="#8c1313"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="A wifi hacking app by Fsecurify"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:background="#8c1313"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:paddingBottom="8dp"
+        android:textColor="#f5f5f5"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:background="#101010"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan Networks"
+            android:id="@+id/scan"
+            android:background="#8c1313"
+            android:textColor="#ffffff"
+            android:onClick="scan"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:id="@+id/button3"
+            android:background="#8c1313"
+            android:layout_weight="1"
+            android:onClick="instructions"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
